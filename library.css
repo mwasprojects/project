@@ -1,0 +1,134 @@
+.game-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .game-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  .game-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .game-item h3 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+  }
+  
+  .game-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .play-btn {
+    padding: 10px 20px;
+    background: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .play-btn:hover {
+    background: #00cc99;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+  
+  .search-bar .search-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #00ffcc;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-left: 10px;
+  }
+  
+  .search-bar .search-btn:hover {
+    background: #00cc99;
+    transform: scale(1.05);
+  }
+  /* library.css */
+
+.library-content {
+  padding: 40px 0;
+}
+
+.library-content h2 {
+  color: #00ffcc;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.categories_library {
+  margin-top: 40px;
+}
+
+.categories_library ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.categories_library li {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categories_library li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.categories_library img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.categories_library p {
+  color: #00ffcc;
+  font-size: 18px;
+}
+
+.file-type-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.audio-icon::before { content: "🎵"; }
+.video-icon::before { content: "🎬"; }
+.document-icon::before { content: "📄"; }
+.photo-icon::before { content: "📷"; }
+.ebook-icon::before { content: "📚"; }
+.archive-icon::before { content: "🗃️"; }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" herf="styles2.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">My Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h1>Welcome to My Website</h1>
+            <button class="cta">Get Started</button>
+        </div>
+
+        <div class="search-bar hero">
+            <input type="search" placeholder="Search...">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <div class="categories_library">
+            <ul>
+                <li>
+                    <div class="file-type-icon audio-icon"></div>
+                    <p>Audio</p>
+                    <small>Music, Podcasts, Audiobooks</small>
+                </li>
+                <li>
+                    <div class="file-type-icon video-icon"></div>
+                    <p>Video</p>
+                    <small>Movies, TV Shows, Short Clips</small>
+                </li>
+                <li>
+                    <div class="file-type-icon document-icon"></div>
+                    <p>Documents</p>
+                    <small>PDFs, DOCs, Spreadsheets</small>
+                </li>
+                <li>
+                    <div class="file-type-icon photo-icon"></div>
+                    <p>Photos</p>
+                    <small>Images, Graphics, Artworks</small>
+                </li>
+                <li>
+                    <div class="file-type-icon ebook-icon"></div>
+                    <p>E-Books</p>
+                    <small>EPUB, MOBI, PDF Books</small>
+                </li>
+                <li>
+                    <div class="file-type-icon archive-icon"></div>
+                    <p>Archives</p>
+                    <small>ZIP, RAR, 7Z Files</small>
+                </li>
+            </ul>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme">🌓</button>
+        <button class="text-to-speech" aria-label="Read aloud">🔊</button>
+
+        <div class="child-friendly-buttons">
+            <button class="child-friendly-btn btn-red">Fun Games</button>
+            <button class="child-friendly-btn btn-blue">Learn</button>
+            <button class="child-friendly-btn btn-yellow">Stories</button>
+            <button class="child-friendly-btn btn-green">Create</button>
+        </div>
+
+        <div id="points-display">Points: 0</div>
+        <canvas id="drawingCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="memory-game">
+            <div class="memory-card" data-framework="apple">🍎</div>
+            <div class="memory-card" data-framework="apple">🍎</div>
+            <div class="memory-card" data-framework="banana">🍌</div>
+            <div class="memory-card" data-framework="banana">🍌</div>
+            <div class="memory-card" data-framework="orange">🍊</div>
+            <div class="memory-card" data-framework="orange">🍊</div>
+        </div>
+        <div id="math-game">
+            <p id="math-question"></p>
+            <input type="number" id="math-answer">
+            <button id="math-submit">Submit</button>
+            <p id="math-result"></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 CyberLearn Hub</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <div class="social-media">
+                <h3>Follow Us:</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook"><img src="https://www.svgrepo.com/show/303861/facebook.svg"
+                                alt="Facebook"></a></li>
+                    <li><a href="#" aria-label="Twitter"><img src="https://www.svgrepo.com/show/303868/twitter.svg"
+                                alt="Twitter"></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="https://www.svgrepo.com/show/303868/instagram.svg"
+                                alt="Instagram"></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><img src="https://www.svgrepo.com/show/303871/linkedin.svg"
+                                alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
