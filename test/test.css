@@ -1,0 +1,257 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.logo {
+    font-size: 24px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #00ffcc;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-bar input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.search-bar .search-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #00ffcc;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Categories Filter */
+.categories-filter ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.categories-filter li {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33% - 20px);
+}
+
+/* Category Suggestions */
+.category-suggestions {
+    display: flex;
+    flex-direction: column; /* Stack categories vertically */
+    margin-bottom: 20px; /* Space between categories */
+}
+
+.category-suggestions ul {
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Wrap items to next line if necessary */
+    list-style: none;
+    padding: 0;
+}
+
+/* Category Suggestions */
+.category-suggestions {
+    margin-top: 20px;
+}
+
+.category-suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Category Suggestions */
+.category-suggestions {
+    margin-top: 20px;
+}
+
+.category-suggestions ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.category-suggestions ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Space between items */
+    padding: 5px 10px; /* Padding for each item */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: add a border */
+    border-radius: 5px; /* Optional: rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Background for items */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    width: 100%; /* Make items take full width */
+    max-width: 400px; /* Optional: limit the width of items */
+}
+
+.category-suggestions ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.category-suggestions ul li span {
+    margin-right: 10px;
+    font-size: 24px; /* Adjust size of the icons */
+    color: #00ffcc; /* Icon color */
+}
+
+/* Optional: Add a different color for the text */
+.category-suggestions ul li p {
+    color: #fff; /* Text color */
+    font-size: 18px; /* Text size */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categories_library {
+    margin-top: 40px;
+  }
+  
+  .categories_library ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .categories_library li {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .categories_library li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  .categories_library img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .categories_library p {
+    color: #00ffcc;
+    font-size: 18px;
+  }
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    vertical-align: middle; /* Align icons with text */
+}
