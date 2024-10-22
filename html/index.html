@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">My Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h1>Welcome to My Website</h1>
+            <button class="cta">Get Started</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="search" placeholder="Search...">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <div class="">
+            <h2></h2>
+            <ul>
+                <li><img src="category1.jpg" alt="Category 1"><p>Category 1</p></li>
+                <li><img src="category2.jpg" alt="Category 2"><p>Category 2</p></li>
+                <li><img src="category3.jpg" alt="Category 3"><p>Category 3</p></li>
+                <li><img src="category4.jpg" alt="Category 4"><p>Category 4</p></li>
+            </ul>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme">🌓</button>
+        <button class="text-to-speech" aria-label="Read aloud">🔊</button>
+
+        <div class="child-friendly-buttons">
+        <button class="child-friendly-btn btn-red">Fun Games</button>
+        <button class="child-friendly-btn btn-blue">Learn</button>
+        <button class="child-friendly-btn btn-yellow">Stories</button>
+        <button class="child-friendly-btn btn-green">Create</button>
+</div>
+
+        <footer>
+            <p>&copy; 2023 My Website</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </footer>
+    </div>]
+    <div id="points-display">Points: 0</div>
+    <canvas id="drawingCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <div id="memory-game">
+        <div class="memory-card" data-framework="apple">🍎</div>
+        <div class="memory-card" data-framework="apple">🍎</div>
+        <div class="memory-card" data-framework="banana">🍌</div>
+        <div class="memory-card" data-framework="banana">🍌</div>
+        <div class="memory-card" data-framework="orange">🍊</div>
+        <div class="memory-card" data-framework="orange">🍊</div>
+    </div>
+    <div id="math-game">
+        <p id="math-question"></p>
+        <input type="number" id="math-answer">
+        <button id="math-submit">Submit</button>
+        <p id="math-result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

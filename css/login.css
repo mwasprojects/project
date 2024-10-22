@@ -1,0 +1,88 @@
+/* Login Page Specific Styles */
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  .login-container h2 {
+    color: #00ffcc;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00ffcc;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  
+  .login-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #00ffcc;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: #00cc99;
+    transform: scale(1.05);
+  }
+  
+  .forgot-password {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .forgot-password a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .forgot-password a:hover {
+    color: #00cc99;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .signup-link a:hover {
+    color: #00cc99;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }

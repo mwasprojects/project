@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">My Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h1>Login</h1>
+        </div>
+
+        <div class="login-container">
+            <h2>Login</h2>
+            <div class="login-form">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <input type="text" id="username" placeholder="Username or Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <span class="password-toggle" onclick="togglePassword()">👁️</span>
+                    </div>
+                    <div class="form-group remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+            <div class="social-login">
+                <p>Or login with:</p>
+                <div class="social-buttons">
+                    <button class="social-btn google">Google</button>
+                    <button class="social-btn facebook">Facebook</button>
+                    <button class="social-btn twitter">Twitter</button>
+                </div>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="signup-link">
+                Don't have an account? <a href="#">Sign up</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 CyberLearn Hub</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <div class="social-media">
+                <h3>Follow Us:</h3>
+                <ul>
+                    <li><a href="icons\facebook\facebook.svg" aria-label="Facebook"><img
+                                src="" alt="Facebook"></a></li>
+                    <li><a href="icons\twitter\twitter.svg" aria-label="Twitter"><img
+                                src="" alt="Twitter"></a></li>
+                    <li><a href="icons\instagram\instagram.svg" aria-label="Instagram"><img src=""
+                                alt="Instagram"></a></li>
+                    <li><a href="icons\linkedin\linkedin.svg" aria-label="LinkedIn"><img src="" alt="LinkedIn"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script> src = "login.js"</script>
+</body>
+
+</html>

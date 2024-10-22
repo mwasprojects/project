@@ -1,0 +1,185 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  nav ul li:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    color: #00ffcc;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* Button Styles */
+  .cta {
+    padding: 15px 30px;
+    border: none;
+    background: #00ffcc;
+    color: #000;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    margin: 10px;
+  }
+  
+  .cta:hover {
+    background: #00cc99;
+    transform: scale(1.05);
+  }
+  
+  .categories {
+  margin: 40px 0;
+}
+
+.categories h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.categories ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.categories li {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+}
+
+.categories li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.categories img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  footer p, footer ul {
+    margin: 10px 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #00cc99;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+
+  /* Add this to your styles.css */
+.light-theme {
+  background: #ffffff;
+  color: #000000;
+}
+
+.light-theme header {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.light-theme footer {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.light-theme a {
+  color: #007bff; /* Example link color */
+}
+
+.light-theme .cta {
+  background: #007bff;
+  color: #fff;
+}
+
+.light-theme .cta:hover {
+  background: #0056b3;
+}
